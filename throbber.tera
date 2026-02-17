@@ -3,15 +3,15 @@ whiskers:
   version: 2.5.1
 active: 0
 ---
-<svg xmlns="http://www.w3.org/2000/svg" 
-  width="204" height="34" viewBox="0 0 204 34" stroke-width="2" 
-  stroke="#{{ text.hex}}" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="1" y="1" width="202" height="32" rx="16" fill="#{{ surface0.hex }}"></rect>
-  {%- for color in [red, green, yellow, blue, pink, teal] -%}
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="204" height="34" viewBox="0 0 204 34" stroke-width="2"
+  stroke="#dcd7ba" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="1" y="1" width="202" height="32" rx="16" fill="#223249"></rect>
+  {%- for color in ["#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f"] -%}
   {%- if active == loop.index0 %}
-  <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ color.hex }}" stroke="#{{ color.hex }}"></circle>
+  <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ color }}" stroke="#{{ color }}"></circle>
   {%- else %}
-  <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ text.hex }}"></circle>
+  <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#dcd7ba"></circle>
   {%- endif -%}
   {%- endfor %}
 </svg>

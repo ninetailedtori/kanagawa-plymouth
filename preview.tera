@@ -2,18 +2,20 @@
 whiskers:
   version: 2.5.1
 ---
-<svg xmlns="http://www.w3.org/2000/svg" 
-  width="512" height="216" viewBox="0 0 512 216" stroke-width="2" 
-  stroke="#{{ text.hex }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="0" y="0" width="512" height="216" fill="#{{ base.hex }}" stroke="#{{ base.hex }}"></rect>
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="512" height="216" viewBox="0 0 512 216" stroke-width="2"
+  stroke="#dcd7ba" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="0" y="0" width="512" height="216" fill="#16161D" stroke="#16161D"></rect>
 
-  <svg xmlns="http://www.w3.org/2000/svg" 
+  <svg xmlns="http://www.w3.org/2000/svg"
     x="154" y="91"
-    width="204" height="34" viewBox="0 0 204 34" stroke-width="2" 
-    stroke="#{{ text.hex }}" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="1" y="1" width="202" height="32" rx="16" fill="#{{ surface0.hex }}"></rect>
-    {%- for color in [red, green, yellow, blue, pink, teal] %}
-    <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ color.hex }}" stroke="#{{ color.hex }}"></circle>
-    {%- endfor %}
+    width="204" height="34" viewBox="0 0 204 34" stroke-width="2"
+    stroke="#dcd7ba" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1" y="1" width="202" height="32" rx="16" fill="#223249"></rect>
+    <circle cx="{{ 17 + 34 * 0 }}" cy="17" r="8" fill="#e82424" stroke="#e82424"></circle>
+    <circle cx="{{ 17 + 34 * 1 }}" cy="17" r="8" fill="#98bb6c" stroke="#98bb6c"></circle>
+    <circle cx="{{ 17 + 34 * 2 }}" cy="17" r="8" fill="#e6c384" stroke="#e6c384"></circle>
+    <circle cx="{{ 17 + 34 * 3 }}" cy="17" r="8" fill="#7fb4ca" stroke="#7fb4ca"></circle>
+    <circle cx="{{ 17 + 34 * 4 }}" cy="17" r="8" fill="#938aa9" stroke="#938aa9"></circle>
   </svg>
 </svg>
