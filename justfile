@@ -15,4 +15,7 @@ build target:
   whiskers --overrides '{"active":5}' throbber.tera | convert -background none - themes/kanagawa-{{target}}/throbber-5.png
 
 preview target:
-  whiskers preview.tera | convert -background none -quality 100% - assets/{{target}}.webp
+  whiskers preview.tera | convert -background none -quality 100% - assets/kanagawa-{{target}}.webp
+
+install target:
+  sudo cp -r themes /usr/share/plymouth/
