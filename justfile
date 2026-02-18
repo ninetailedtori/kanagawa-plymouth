@@ -21,4 +21,4 @@ preview:
     whiskers src/preview.tera | convert -background none -quality 100% - assets/kanagawa-wave.webp
 
 install:
-    sudo cp -r themes /usr/share/plymouth/
+    sudo cp -r themes/* /usr/share/plymouth/themes/
