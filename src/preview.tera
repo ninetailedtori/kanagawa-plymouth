@@ -12,7 +12,7 @@ whiskers:
     width="204" height="34" viewBox="0 0 204 34" stroke-width="2"
     stroke="#dcd7ba" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <rect x="1" y="1" width="202" height="32" rx="16" fill="#223249"></rect>
-    {%- for color in ["#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f"] -%}
+    {%- for color in ["e82424", "98bb6c", "e6c384", "7fb4ca", "938aa9", "7aa89f"] -%}
     <circle cx="{{ 17 + 34 * loop.index0 }}" cy="17" r="8" fill="#{{ color }}" stroke="#{{ color }}"></circle>
     {%- endfor %}
   </svg>
